@@ -36,9 +36,9 @@ cat << EOF | kubectl $ACTION -f -
    "namespace": "default"
  },
  "data": {
-   "proxycert": "$CERT",
-   "proxykey": "$KEY",
-   "dhparam": "$DHPARAM"
+   "tls.cert": "$CERT",
+   "tls.key": "$KEY",
+   "dhparam.pem": "$DHPARAM"
  }
 }
 EOF
